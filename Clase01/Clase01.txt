@@ -1,0 +1,10 @@
+
+TEMAS/ACTIVIDADES A REALIZAR:
+
+- Introducciòn al curso de Programador Java
+- Instalaciòn del Git
+- Creaciòn de cuenta en GitHub
+- TrabajaR con GitHub
+- Realñizar Ejemplo de Programaciòn orientada al servicio
+- Clase y objetos
+- Miembros de Clase
