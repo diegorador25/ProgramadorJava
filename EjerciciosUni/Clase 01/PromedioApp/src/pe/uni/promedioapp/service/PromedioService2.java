@@ -4,19 +4,20 @@ package pe.uni.promedioapp.service;
 
 public class PromedioService2 {
     
+    //Variables de entrada
     private double nota01;
     private double nota02;
     private double nota03;
 
     
-    //copnstructor se encarga de inicializar las variables de la clase por primera vez.
+    //El constructor se encarga de inicializar las variables de la clase por primera vez.
     public PromedioService2(double nota01, double nota02, double nota03) {
         this.nota01 = nota01;
         this.nota02 = nota02;
         this.nota03 = nota03;
     }
 
-   
+    //Método para mostrar un "double" con dos decimales.
         public double redondear (double resultado) {    
         int entero;
         entero = (int)(resultado*100);
@@ -64,7 +65,7 @@ public class PromedioService2 {
     return redondear(PorcentajeAprobacion);
         
     }
-    
-    
+
+       
    
 }

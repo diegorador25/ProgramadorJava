@@ -103,6 +103,7 @@ public class VentaView extends javax.swing.JFrame {
         //Dato
         double precio;
         int cantidad;
+        
         precio =Double.parseDouble(txtPrecio.getText());
         cantidad =Integer.parseInt(txtCantidad.getText());
         
