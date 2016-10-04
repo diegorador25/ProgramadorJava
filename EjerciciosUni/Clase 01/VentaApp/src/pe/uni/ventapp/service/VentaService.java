@@ -16,21 +16,19 @@ public class VentaService {
     return total;
    }
     
-    
     public double calcularImpuesto (double precio,int cantidad){
 
     double impuesto;
-    impuesto = calcularTotal(precio, cantidad) * IGV;
+    impuesto = calcularImporte(precio, cantidad) * IGV;
     return impuesto;
    }
-    
     
     public double calcularImporte (double precio, int cantidad){
 
     double importe;
-    importe = calcularTotal(precio, cantidad) - calcularImpuesto(precio, cantidad);
+    importe = calcularTotal(precio, cantidad)/(1+IGV);
+    //importe = calcularTotal(precio, cantidad) - (IGV*calcularTotal(precio, cantidad));
     return importe;
    }
-     
-
+    
 }
