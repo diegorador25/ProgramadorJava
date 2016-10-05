@@ -22,17 +22,17 @@ public class VentaService2 {
         int i;
         double res;
       //Convirtiendo a número con dos dígitos decimales. 
-        entero = (int) (resultado*100);
+        entero = (int) (Math.round(resultado*100));
         res = entero/100.0;
       //Extrayendo el tercer dígito decimal
-        i = (int)((resultado - res)*1000);
+        //i = (int)((resultado - res)*1000);
       //Condición para incrementar el segundo dígito decimal 
-        if (i >= 5)
-            resultado = (res +0.01);
-        else
-            resultado = res;
+        //if (i >= 5)
+            //resultado = (res +0.01);
+        //else
+            //resultado = res;
         
-    return resultado;  
+    return res;  
     
     }
         
