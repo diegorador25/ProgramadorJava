@@ -35,7 +35,9 @@ public class EncuestaService {
             
             }
         }
-    
+        else 
+            aprobacion = 0;
+        
         return aprobacion;
     }
     

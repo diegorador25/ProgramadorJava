@@ -1,7 +1,6 @@
 
 package pe.uni.ventapp.service;
 
-
 public class VentaService2 {
     
     private double precio;
@@ -20,24 +19,23 @@ public class VentaService2 {
       //Variables
         int entero;
         int i;
-        double res;
+        double red;
       //Convirtiendo a número con dos dígitos decimales. 
-        entero = (int) (Math.round(resultado*100));
-        res = entero/100.0;
+        entero = (int) (resultado*100);
+        red = entero/100.0;
       //Extrayendo el tercer dígito decimal
-        //i = (int)((resultado - res)*1000);
+        i = (int)((resultado - red)*1000);
       //Condición para incrementar el segundo dígito decimal 
-        //if (i >= 5)
-            //resultado = (res +0.01);
-        //else
-            //resultado = res;
+        if (i >= 5)
+            resultado = (red + 0.01);
+        else
+            resultado = red;
         
-    return res;  
+    return resultado;  
     
     }
         
-    
-        
+            
     public double calcularImporte(){
     
         double importe;
@@ -47,6 +45,7 @@ public class VentaService2 {
     
     }
     
+    
     public double calcularImpuesto(){
     
         double impuesto;
@@ -55,6 +54,7 @@ public class VentaService2 {
     return redondear(impuesto);
         
     }
+    
     
     public double calcularTotal(){
     

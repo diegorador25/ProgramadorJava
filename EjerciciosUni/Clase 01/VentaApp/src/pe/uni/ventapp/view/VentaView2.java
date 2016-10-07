@@ -156,6 +156,9 @@ public class VentaView2 extends javax.swing.JFrame {
         repo += "Precio del Producto: "+ precio + "\n";
         repo += "Cantidad de Productos: "+ cantidad + "\n";
         repo += "I.G.V Aplicado: "+ igv + "\n";
+        repo += "*********************************" + "\n";
+        repo += "*********RESULTADO*********" + "\n";
+        repo += "*********************************"+ "\n";
         repo += "Importe de la Venta: "+ importe + "\n";
         repo += "Impuesto de la Venta: "+ impuesto + "\n";
         repo += "Total a Pagar: "+ total + "\n";
