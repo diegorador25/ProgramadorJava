@@ -29,7 +29,9 @@ public class VentaService {
     public double calcularImpuesto (double precio,int cantidad){
 
         double impuesto;
-        impuesto = calcularImporte(precio, cantidad) * IGV;
+        //impuesto = calcularImporte(precio, cantidad) * IGV;
+        impuesto = calcularTotal(precio, cantidad) - calcularImporte(precio, cantidad);
+        
         return impuesto;
    }
        
